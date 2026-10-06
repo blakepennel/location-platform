@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://location-platform.local/schemas/sync-status.schema.json",
+  "title": "timeline-sync status file (state/sync-status.json)",
+  "description": "Written atomically by timeline-sync after every sync attempt. Consumed by timeline-mcp. MUST NOT contain secrets, coordinates, place names or place IDs.",
+  "type": "object",
+  "required": ["schema_version", "source", "adapter", "last_attempt_at", "consecutive_failures", "auth"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "source": { "const": "google_timeline" },
+    "adapter": { "enum": ["geller", "synthetic", "local_db"] },
+    "last_attempt_at": { "type": "string", "format": "date-time" },
+    "last_success_at": { "type": ["string", "null"], "format": "date-time" },
+    "last_cloud_request_at": { "type": ["string", "null"], "format": "date-time", "description": "Last time a request to Google's cloud completed with HTTP 200 + grpc-status 0" },
+    "last_error": {
+      "type": ["object", "null"],
+      "properties": {
+        "at": { "type": "string", "format": "date-time" },
+        "stage": { "enum": ["auth", "fetch", "decrypt", "export", "enrich", "publish", "unknown"] },
+        "message": { "type": "string", "description": "Sanitized; never contains tokens/keys" }
+      }
+    },
+    "consecutive_failures": { "type": "integer", "minimum": 0 },
+    "sync_duration_seconds": { "type": ["number", "null"] },
+    "record_counts": {
+      "type": ["object", "null"],
+      "properties": {
+        "visit": { "type": "integer" }, "activity": { "type": "integer" },
+        "timelinePath": { "type": "integer" }, "trip": { "type": "integer" },
+        "total": { "type": "integer" }, "deleted_skipped": { "type": "integer" },
+        "decode_errors": { "type": "integer" }
+      }
+    },
+    "oldest_record_start": { "type": ["string", "null"], "format": "date-time" },
+    "newest_record_end": { "type": ["string", "null"], "format": "date-time" },
+    "newest_cloud_mutation_at": { "type": ["string", "null"], "format": "date-time", "description": "max(timestamp_millis) of fetched rows when Google supplies it; null otherwise" },
+    "auth": {
+      "type": "object",
+      "properties": {
+        "state": { "enum": ["ok", "missing", "expired", "error", "unknown"] },
+        "checked_at": { "type": ["string", "null"], "format": "date-time" },
+        "master_token_present": { "type": "boolean" },
+        "key_present": { "type": "boolean" }
+      }
+    },
+    "output": {
+      "type": ["object", "null"],
+      "properties": {
+        "current_export": { "type": "string", "description": "Absolute path of the last-known-good export (current/Timeline.json)" },
+        "export_sha256": { "type": "string" },
+        "enriched": { "type": "boolean" },
+        "published_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

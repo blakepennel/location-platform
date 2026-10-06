@@ -1,0 +1,123 @@
+# =====================================================================
+# location-platform — NEVER commit secrets or real location data.
+# Real data and secrets live OUTSIDE the checkout (default ~/.location-platform).
+# These patterns are defence in depth in case something lands here anyway.
+# =====================================================================
+
+# ---- environment / config with secrets ----
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+.envrc
+
+# ---- credentials, tokens, keys, cookies ----
+# (Narrow patterns only — a blanket *secret* would swallow source files like secrets.py/secrets.ts.)
+*.secret
+*.secrets
+secrets.json
+secrets.txt
+*client_secret*
+*-secret.*
+.secrets/
+*token*.txt
+tok.txt
+master.txt
+master*.txt
+key.b64
+*.b64
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+jwks*.json
+!**/test/**/jwks*.fixture.json
+id_rsa*
+id_ed25519*
+android_id
+cookies*.txt
+*cookies*.json
+*.cookies
+cookie-jar*
+oauth_token*
+credentials*.json
+client_secret*.json
+service-account*.json
+.netrc
+.npmrc
+
+# ---- browser profiles / automation artifacts ----
+browser-profile*/
+chrome-profile*/
+user-data-dir*/
+.puppeteer*/
+playwright/.auth/
+*.har
+
+# ---- databases (may contain real location data) ----
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+odlh-storage.db*
+data/
+!**/test/fixtures/**
+
+# ---- real Timeline exports / location dumps ----
+Timeline*.json
+!**/test/fixtures/**/Timeline*.json
+!**/sample-output.json
+location-history*.json
+Records.json
+Semantic*.json
+place_cache*.json
+exports/
+timeline-data/
+*.gpx
+*.kml
+*.kmz
+*.geojson
+!**/test/fixtures/**/*.geojson
+
+# ---- OAuth dev server state ----
+mcp-auth/.dev-state/
+.oidc*/
+
+# ---- logs / scratch ----
+*.log
+logs/
+*.pid
+.run/
+tmp/
+scratch/
+
+# ---- tooling ----
+node_modules/
+dist/
+coverage/
+.vitest/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---- private leak-scan terms (see tools/leak-scan.mjs) ----
+.private-denylist
+
+# docker compose import-host placeholder mount
+.no-host-home/
+.container-data/

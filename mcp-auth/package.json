@@ -1,0 +1,28 @@
+{
+  "name": "@location/mcp-auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./dev-server": "./src/dev-server/server.ts",
+    "./testing": "./src/testing.ts"
+  },
+  "bin": {
+    "mcp-dev-auth": "./src/dev-server/cli.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "dev": "node --import tsx src/dev-server/cli.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jose": "^6.0.0",
+    "oidc-provider": "^9.5.0",
+    "@location/shared": "*"
+  },
+  "devDependencies": {
+    "@types/oidc-provider": "^9.0.0"
+  }
+}

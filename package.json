@@ -1,0 +1,25 @@
+{
+  "name": "location-platform",
+  "private": true,
+  "type": "module",
+  "workspaces": ["shared", "mcp-auth", "timeline-mcp", "live-location-mcp"],
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test:node && npm run test:py",
+    "test:node": "npm run test --workspaces --if-present",
+    "test:py": "node tools/run-python-tests.mjs",
+    "test:e2e": "node --disable-warning=ExperimentalWarning --import tsx tools/e2e.ts",
+    "dev": "node --disable-warning=ExperimentalWarning --import tsx tools/dev.ts",
+    "seed": "node --disable-warning=ExperimentalWarning --import tsx tools/seed.ts",
+    "leak-scan": "node tools/leak-scan.mjs",
+    "precommit": "node tools/leak-scan.mjs --staged"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^5.0.2"
+  }
+}

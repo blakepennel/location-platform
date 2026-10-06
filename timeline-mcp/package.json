@@ -1,0 +1,22 @@
+{
+  "name": "timeline-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "timeline-mcp": "./src/cli.ts" },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "start": "node --disable-warning=ExperimentalWarning --import tsx src/cli.ts serve",
+    "index": "node --disable-warning=ExperimentalWarning --import tsx src/cli.ts index",
+    "stdio": "node --disable-warning=ExperimentalWarning --import tsx src/cli.ts stdio",
+    "status": "node --disable-warning=ExperimentalWarning --import tsx src/cli.ts status"
+  },
+  "dependencies": {
+    "@location/mcp-auth": "*",
+    "@location/shared": "*",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "express": "^5.1.0",
+    "zod": "^3.25.0"
+  }
+}

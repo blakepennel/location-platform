@@ -1,0 +1,35 @@
+# Keep secrets, real data and host build artifacts out of the image build context.
+.git
+**/.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.egg-info
+**/coverage
+**/dist
+.container-data
+**/data
+
+# environment / secrets / real data (defence in depth; they live outside the repo anyway)
+.env
+.env.*
+!.env.example
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.db-*
+**/cookies*.txt
+**/master*.txt
+**/key.b64
+**/places_api_key.txt
+**/android_id
+**/Timeline-*.json
+**/place_cache*.json
+.private-denylist
+
+# editor / OS noise
+.vscode
+.idea
+**/.DS_Store
+**/Thumbs.db

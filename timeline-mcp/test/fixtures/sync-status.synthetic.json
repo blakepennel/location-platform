@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source": "google_timeline",
+  "adapter": "synthetic",
+  "last_attempt_at": "2026-09-28T09:00:00Z",
+  "last_success_at": "2026-09-28T09:00:00Z",
+  "last_cloud_request_at": null,
+  "last_error": null,
+  "consecutive_failures": 0,
+  "sync_duration_seconds": 1.0,
+  "record_counts": {
+    "visit": 61,
+    "activity": 46,
+    "timelinePath": 23,
+    "trip": 1,
+    "total": 131,
+    "deleted_skipped": 1,
+    "decode_errors": 0
+  },
+  "oldest_record_start": "2026-09-13T23:00:00Z",
+  "newest_record_end": "2026-09-27T22:00:00Z",
+  "newest_cloud_mutation_at": "2026-09-28T01:00:00Z",
+  "auth": {
+    "state": "ok",
+    "checked_at": "2026-09-28T09:00:00Z",
+    "master_token_present": false,
+    "key_present": false
+  },
+  "output": {
+    "current_export": "/synthetic/timeline/current/Timeline.json",
+    "export_sha256": "dcb30ae2170453b13690e1383990d30b3c739939cb5fe4e97ea795736838a7b4",
+    "enriched": false,
+    "published_at": "2026-09-28T09:00:00Z"
+  }
+}

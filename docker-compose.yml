@@ -1,0 +1,203 @@
+# location-platform on Docker. See DOCKER.md for the full guide.
+#
+#   docker compose up -d --build         # OAuth + both MCP servers + live poller + timeline scheduler
+#   docker compose logs -f                # watch
+#   docker compose down                   # stop (data stays in the volume)
+#
+# All state (SQLite DBs, Timeline exports, secrets) lives in ONE place mounted at /data:
+#   default: the named volume "lp-data" (safest for SQLite on Docker Desktop for Windows/macOS)
+#   Linux server: set LP_DATA=/srv/location-platform in .env to use a normal directory instead.
+# Every port is published on 127.0.0.1 only. Nothing is reachable from your network.
+name: location-platform
+
+x-app: &app
+  build: .
+  image: location-platform:latest
+  restart: unless-stopped
+  volumes:
+    - ${LP_DATA:-lp-data}:/data
+  labels:
+    - com.centurylinklabs.watchtower.enable=false   # locally built image; never auto-pull
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: "3"
+
+x-env: &env
+  LOCATION_PLATFORM_HOME: /data
+  LOCATION_TIMEZONE: ${LOCATION_TIMEZONE:-}
+  LOG_LEVEL: ${LOG_LEVEL:-info}
+  LOG_LOCATION_DEBUG: ${LOG_LOCATION_DEBUG:-false}
+  # Layer B (MCP OAuth). Tokens carry iss=http://localhost:8700 (what your browser/clients see);
+  # inside the Docker network the key set is fetched from the dev-auth container directly.
+  MCP_AUTH_ISSUER: ${MCP_AUTH_ISSUER:-http://localhost:8700}
+  MCP_AUTH_JWKS_URI: ${MCP_AUTH_JWKS_URI:-http://dev-auth:8700/jwks}
+  MCP_ALLOWED_SUBJECTS: ${MCP_ALLOWED_SUBJECTS:-local-dev-user}
+  TIMELINE_MCP_PUBLIC_URL: ${TIMELINE_MCP_PUBLIC_URL:-http://localhost:8701}
+  LIVE_MCP_PUBLIC_URL: ${LIVE_MCP_PUBLIC_URL:-http://localhost:8702}
+
+x-health: &health
+  interval: 15s
+  timeout: 5s
+  retries: 10
+  start_period: 20s
+
+services:
+  dev-auth:
+    <<: *app
+    command: ["node", "--import", "tsx", "mcp-auth/src/dev-server/cli.ts"]
+    environment:
+      <<: *env
+      DEV_AUTH_SUBJECT: ${DEV_AUTH_SUBJECT:-local-dev-user}
+      DEV_AUTH_STATE_DIR: /data/secrets/dev-auth
+    ports:
+      - "127.0.0.1:8700:8700"
+    healthcheck:
+      <<: *health
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8700/healthz').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))"]
+
+  timeline-mcp:
+    <<: *app
+    command: ["node", "--import", "tsx", "timeline-mcp/src/cli.ts", "serve"]
+    environment:
+      <<: *env
+      TIMELINE_MAX_PRECISION: ${TIMELINE_MAX_PRECISION:-exact}
+      TIMELINE_DEFAULT_PRECISION: ${TIMELINE_DEFAULT_PRECISION:-exact}
+    ports:
+      - "127.0.0.1:8701:8701"
+    depends_on:
+      dev-auth:
+        condition: service_healthy
+    healthcheck:
+      <<: *health
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8701/healthz').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))"]
+
+  live-location-mcp:
+    <<: *app
+    command: ["node", "--import", "tsx", "live-location-mcp/src/cli.ts", "serve"]
+    environment:
+      <<: *env
+      LIVE_MAX_PRECISION: ${LIVE_MAX_PRECISION:-exact}
+      LIVE_DEFAULT_PRECISION: ${LIVE_DEFAULT_PRECISION:-exact}
+      LIVE_STALE_SECONDS: ${LIVE_STALE_SECONDS:-300}
+    ports:
+      - "127.0.0.1:8702:8702"
+    depends_on:
+      dev-auth:
+        condition: service_healthy
+    healthcheck:
+      <<: *health
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8702/healthz').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))"]
+
+  live-poller:
+    <<: *app
+    command: ["node", "--import", "tsx", "live-location-mcp/src/cli.ts", "daemon"]
+    environment:
+      <<: *env
+      LIVE_SOURCE: ${LIVE_SOURCE:-google}
+      LIVE_POLL_INTERVAL: ${LIVE_POLL_INTERVAL:-60000}
+      LIVE_BACKOFF_MAX: ${LIVE_BACKOFF_MAX:-900000}
+      LIVE_SHARER_ID: ${LIVE_SHARER_ID:-}
+      # session keepalive (see live-location-mcp/README.md): cookie write-back, RotateCookies, browser profile
+      LIVE_COOKIE_ROTATION: ${LIVE_COOKIE_ROTATION:-true}
+      LIVE_ROTATE_MIN_INTERVAL_SEC: ${LIVE_ROTATE_MIN_INTERVAL_SEC:-540}
+      LIVE_BROWSER_REFRESH: ${LIVE_BROWSER_REFRESH:-true}
+      LIVE_BROWSER_PROFILE: ${LIVE_BROWSER_PROFILE:-}
+      # headless (default) | vnc = for the one-time `login`, watch/drive Chromium at http://localhost:6082/vnc.html
+      BROWSER_MODE: ${BROWSER_MODE:-headless}
+      VNC_PASSWORD: ${VNC_PASSWORD:-}
+    shm_size: "1gb"            # Chromium (login / cookie export) needs more than the 64 MB default
+    ports:
+      - "127.0.0.1:${LIVE_VNC_PORT:-6082}:6080"   # noVNC for `live-location login` (only serves when BROWSER_MODE=vnc)
+
+  timeline-sync:
+    <<: *app
+    command: ["timeline-sync-loop"]
+    shm_size: "1gb"            # Chromium needs more shared memory than Docker's 64 MB default
+    environment:
+      <<: *env
+      TIMELINE_SOURCE: ${TIMELINE_SOURCE:-geller}
+      TIMELINE_SYNC_INTERVAL_SECONDS: ${TIMELINE_SYNC_INTERVAL_SECONDS:-21600}
+      TIMELINE_AUTO_NAMES: ${TIMELINE_AUTO_NAMES:-true}
+      TIMELINE_NAMES_METHOD: ${TIMELINE_NAMES_METHOD:-browser}
+      TIMELINE_NAMES_MAX_PER_RUN: ${TIMELINE_NAMES_MAX_PER_RUN:-150}
+      # headless (default) | vnc = watch/drive the browser at http://localhost:6080/vnc.html
+      BROWSER_MODE: ${BROWSER_MODE:-headless}
+      VNC_PASSWORD: ${VNC_PASSWORD:-}
+    ports:
+      - "127.0.0.1:${VNC_PORT:-6080}:6080"
+
+  # ChatGPT via OpenAI Secure MCP Tunnel (outbound-only; nothing is exposed publicly).
+  # One tunnel per MCP server. tunnel-client launches the server over stdio inside this image,
+  # so no OAuth server has to be reachable from the internet. Enable with:
+  #   docker compose --profile chatgpt up -d
+  # after setting OPENAI_TUNNEL_API_KEY, TIMELINE_TUNNEL_ID and LIVE_TUNNEL_ID in .env.
+  chatgpt-timeline:
+    <<: *app
+    profiles: ["chatgpt"]
+    command: ["tunnel-client", "run", "--control-plane.api-key", "env:CONTROL_PLANE_API_KEY"]
+    environment:
+      <<: *env
+      CONTROL_PLANE_API_KEY: ${OPENAI_TUNNEL_API_KEY:-}
+      CONTROL_PLANE_TUNNEL_ID: ${TIMELINE_TUNNEL_ID:-}
+      MCP_COMMAND: node --import tsx timeline-mcp/src/cli.ts stdio
+      TIMELINE_MAX_PRECISION: ${TIMELINE_MAX_PRECISION:-exact}
+      TIMELINE_DEFAULT_PRECISION: ${TIMELINE_DEFAULT_PRECISION:-exact}
+      LOG_FORMAT: json
+    depends_on:
+      timeline-mcp:
+        condition: service_healthy   # the HTTP server owns index imports; stdio only reads
+
+  chatgpt-live:
+    <<: *app
+    profiles: ["chatgpt"]
+    command: ["tunnel-client", "run", "--control-plane.api-key", "env:CONTROL_PLANE_API_KEY"]
+    environment:
+      <<: *env
+      CONTROL_PLANE_API_KEY: ${OPENAI_TUNNEL_API_KEY:-}
+      CONTROL_PLANE_TUNNEL_ID: ${LIVE_TUNNEL_ID:-}
+      MCP_COMMAND: node --import tsx live-location-mcp/src/cli.ts stdio
+      LIVE_MAX_PRECISION: ${LIVE_MAX_PRECISION:-exact}
+      LIVE_DEFAULT_PRECISION: ${LIVE_DEFAULT_PRECISION:-exact}
+      LIVE_STALE_SECONDS: ${LIVE_STALE_SECONDS:-300}
+      LOG_FORMAT: json
+
+  # One-off: copy an existing ~/.location-platform into the Docker volume.
+  #   first run (everything):   HOST_PLATFORM_HOME=C:/Users/you/.location-platform docker compose run --rm import-host
+  #   refresh secrets only:     IMPORT_WHAT=secrets HOST_PLATFORM_HOME=... docker compose run --rm import-host
+  #     (e.g. after re-exporting the live cookies.txt; databases in the volume are left alone)
+  import-host:
+    <<: *app
+    profiles: ["tools"]
+    restart: "no"
+    environment:
+      IMPORT_WHAT: ${IMPORT_WHAT:-all}
+      FORCE: ${FORCE:-0}
+    volumes:
+      - ${LP_DATA:-lp-data}:/data
+      - ${HOST_PLATFORM_HOME:-./.no-host-home}:/host:ro
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        [ -d /host/secrets ] || [ -d /host/timeline ] || { echo "nothing to import: set HOST_PLATFORM_HOME to your existing .location-platform folder" >&2; exit 1; }
+        case "$$IMPORT_WHAT" in
+          secrets)
+            mkdir -p /data/secrets
+            cp -R --no-preserve=ownership,mode /host/secrets/. /data/secrets/ ;;
+          all)
+            if [ "$$FORCE" != "1" ] && { [ -e /data/live-location ] || [ -e /data/timeline-mcp ]; }; then
+              echo "the volume already has databases; use IMPORT_WHAT=secrets, or FORCE=1 to overwrite them" >&2; exit 1
+            fi
+            cp -R --no-preserve=ownership,mode /host/. /data/ ;;
+          *) echo "IMPORT_WHAT must be all or secrets" >&2; exit 1 ;;
+        esac
+        find /data \( -name '*-wal' -o -name '*-shm' \) -type f -delete
+        rm -f /data/timeline/state/sync.lock   # a host run's lock holds a PID from another OS
+        chmod -R go-rwx /data
+        echo "imported ($$IMPORT_WHAT) into the Docker volume:"; ls /data
+
+volumes:
+  lp-data:

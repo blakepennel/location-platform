@@ -1,0 +1,3 @@
+[submodule "timeline-sync/upstream"]
+	path = timeline-sync/upstream
+	url = https://github.com/arkenoi/timeline-export.git

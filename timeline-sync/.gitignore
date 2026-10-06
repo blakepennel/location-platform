@@ -1,0 +1,4 @@
+# The repo-root .gitignore has a blanket `*secret*` rule (defence in depth against leaked
+# credentials). timeline_sync/secrets.py is source code that only *handles* secrets and
+# contains none, so un-ignore it explicitly.
+!timeline_sync/secrets.py

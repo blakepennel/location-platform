@@ -1,0 +1,3348 @@
+{
+  "semanticSegments": [
+    {
+      "startTime": "2026-09-14T00:00:00+01:00",
+      "endTime": "2026-09-14T07:28:36+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.85,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0013055°, 20.0033020°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.84,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-13bcbebfe0aff5146c6e",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-14T07:28:36+01:00",
+      "endTime": "2026-09-14T07:52:50.499+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0010113°, 20.0035343°"
+        },
+        "end": {
+          "latLng": "10.0044731°, 20.0092049°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.8
+        }
+      },
+      "segmentId": "synthetic-26bbe05ab40bd34db632",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-14T07:28:36+01:00",
+      "endTime": "2026-09-14T09:26:26+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0010115°, 20.0036955°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0035960°, 20.0062325°",
+          "durationMinutesOffsetFromStartTime": "23"
+        },
+        {
+          "point": "10.0054596°, 20.0096529°",
+          "durationMinutesOffsetFromStartTime": "47"
+        },
+        {
+          "point": "10.0078667°, 20.0128419°",
+          "durationMinutesOffsetFromStartTime": "70"
+        },
+        {
+          "point": "10.0098733°, 20.0158380°",
+          "durationMinutesOffsetFromStartTime": "94"
+        },
+        {
+          "point": "10.0122022°, 20.0185820°",
+          "durationMinutesOffsetFromStartTime": "117"
+        }
+      ],
+      "segmentId": "synthetic-b07ee398fec32fb9fb1f",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-14T07:52:50.499+01:00",
+      "endTime": "2026-09-14T08:33:17+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0043915°, 20.0092781°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.73,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-445af57597a748a21fe8",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-14T08:33:17+01:00",
+      "endTime": "2026-09-14T08:51:41+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0046757°, 20.0090525°"
+        },
+        "end": {
+          "latLng": "10.0119866°, 20.0186688°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.81
+        }
+      },
+      "segmentId": "synthetic-9e5d4a775bbc587a532a",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-14T08:51:41+01:00",
+      "endTime": "2026-09-14T17:33:31+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.93,
+        "isConfirmed": true,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0120383°, 20.0187707°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.98,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-f522558e1c1ef6cb41ba",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-14T17:33:31+01:00",
+      "endTime": "2026-09-14T17:53:54+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0120573°, 20.0188413°"
+        },
+        "end": {
+          "latLng": "10.0022921°, 20.0150975°"
+        },
+        "distanceMeters": 4000.0,
+        "topCandidate": {
+          "type": "cycling",
+          "typeCode": 11,
+          "probability": 0.88
+        }
+      },
+      "segmentId": "synthetic-03231a5eda2404ab4320",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-14T17:33:31+01:00",
+      "endTime": "2026-09-14T19:34:06+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0119012°, 20.0185362°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0099907°, 20.0159697°",
+          "durationMinutesOffsetFromStartTime": "20"
+        },
+        {
+          "point": "10.0087187°, 20.0136290°",
+          "durationMinutesOffsetFromStartTime": "40"
+        },
+        {
+          "point": "10.0065927°, 20.0109563°",
+          "durationMinutesOffsetFromStartTime": "60"
+        },
+        {
+          "point": "10.0050418°, 20.0084120°",
+          "durationMinutesOffsetFromStartTime": "80"
+        },
+        {
+          "point": "10.0032625°, 20.0060455°",
+          "durationMinutesOffsetFromStartTime": "100"
+        },
+        {
+          "point": "10.0012654°, 20.0035376°",
+          "durationMinutesOffsetFromStartTime": "120"
+        }
+      ],
+      "segmentId": "synthetic-5361a6fbc70b3a5c66e1",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-14T17:53:54+01:00",
+      "endTime": "2026-09-14T18:58:23+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.82,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0023812°, 20.0150698°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 500,
+          "probability": 0.84,
+          "placeId": "ChIJ3harVGZA7_wRU653AETO7L8",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ3harVGZA7_wRU653AETO7L8",
+          "featureId": "0xfcef406654ab16de:0xbfecce440077ae53"
+        }
+      },
+      "segmentId": "synthetic-d5d8e64512096329db1b",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-14T18:58:23+01:00",
+      "endTime": "2026-09-14T19:34:06+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0023084°, 20.0149573°"
+        },
+        "end": {
+          "latLng": "10.0011959°, 20.0032118°"
+        },
+        "distanceMeters": 2900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.81
+        }
+      },
+      "segmentId": "synthetic-34923370ca01af89439e",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-14T19:34:06+01:00",
+      "endTime": "2026-09-15T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.88,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012814°, 20.0035933°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.83,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-3e9eaebe798990d00868",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-15T00:00:00+01:00",
+      "endTime": "2026-09-15T07:32:50+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.86,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0013819°, 20.0035754°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.75,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-a727b7b0d13f6c9c56d5",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-15T07:32:50+01:00",
+      "endTime": "2026-09-15T07:54:13.057+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0011924°, 20.0033459°"
+        },
+        "end": {
+          "latLng": "10.0045218°, 20.0092764°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.88
+        }
+      },
+      "segmentId": "synthetic-fa72d736ed62b7d5249f",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-15T07:32:50+01:00",
+      "endTime": "2026-09-15T09:28:22.171+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0010531°, 20.0036712°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0031107°, 20.0060389°",
+          "durationMinutesOffsetFromStartTime": "19"
+        },
+        {
+          "point": "10.0047100°, 20.0086216°",
+          "durationMinutesOffsetFromStartTime": "38"
+        },
+        {
+          "point": "10.0066479°, 20.0108185°",
+          "durationMinutesOffsetFromStartTime": "58"
+        },
+        {
+          "point": "10.0083539°, 20.0135060°",
+          "durationMinutesOffsetFromStartTime": "77"
+        },
+        {
+          "point": "10.0104611°, 20.0160051°",
+          "durationMinutesOffsetFromStartTime": "96"
+        },
+        {
+          "point": "10.0119521°, 20.0188381°",
+          "durationMinutesOffsetFromStartTime": "115"
+        }
+      ],
+      "segmentId": "synthetic-99f0c27485f296110091",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-15T07:54:13.057+01:00",
+      "endTime": "2026-09-15T08:31:26.551+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.81,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0045160°, 20.0092146°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.88,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-c86cafdb19b8db4b029d",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-15T08:31:26.551+01:00",
+      "endTime": "2026-09-15T08:54:40.598+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0043723°, 20.0089366°"
+        },
+        "end": {
+          "latLng": "10.0121204°, 20.0188405°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.98
+        }
+      },
+      "segmentId": "synthetic-0e7a496932e4156a7147",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-15T08:54:40.598+01:00",
+      "endTime": "2026-09-15T17:27:05+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.8,
+        "isConfirmed": true,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0120812°, 20.0188017°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.79,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-1fc786552dac049bb8d3",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-15T17:27:05+01:00",
+      "endTime": "2026-09-15T17:54:38.998+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0119083°, 20.0185071°"
+        },
+        "end": {
+          "latLng": "10.0076586°, 20.0012875°"
+        },
+        "distanceMeters": 7300.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-048f7f30f9ebfae260c3",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-15T17:27:05+01:00",
+      "endTime": "2026-09-15T19:27:19+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0122463°, 20.0186497°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0103943°, 20.0162194°",
+          "durationMinutesOffsetFromStartTime": "17"
+        },
+        {
+          "point": "10.0092129°, 20.0140513°",
+          "durationMinutesOffsetFromStartTime": "34"
+        },
+        {
+          "point": "10.0076202°, 20.0124202°",
+          "durationMinutesOffsetFromStartTime": "51"
+        },
+        {
+          "point": "10.0059136°, 20.0097601°",
+          "durationMinutesOffsetFromStartTime": "69"
+        },
+        {
+          "point": "10.0045350°, 20.0080557°",
+          "durationMinutesOffsetFromStartTime": "86"
+        },
+        {
+          "point": "10.0028796°, 20.0055910°",
+          "durationMinutesOffsetFromStartTime": "103"
+        },
+        {
+          "point": "10.0011268°, 20.0033082°",
+          "durationMinutesOffsetFromStartTime": "120"
+        }
+      ],
+      "segmentId": "synthetic-7b5ef2ec4332f29ad785",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-15T17:54:38.998+01:00",
+      "endTime": "2026-09-15T19:04:43.852+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.94,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0076882°, 20.0013902°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.86,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-950681efa89939b9de4d",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-15T19:04:43.852+01:00",
+      "endTime": "2026-09-15T19:24:33+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0077580°, 20.0012303°"
+        },
+        "end": {
+          "latLng": "10.0011285°, 20.0034524°"
+        },
+        "distanceMeters": 2100.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.81
+        }
+      },
+      "segmentId": "synthetic-9348b3887e45276979f1",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-15T19:24:33+01:00",
+      "endTime": "2026-09-16T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011194°, 20.0035872°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.8,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-46c8297ecca5f29bf785",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-16T00:00:00+01:00",
+      "endTime": "2026-09-16T07:29:36+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.75,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011732°, 20.0032776°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.9,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-9cd1f9c7f0977d30f4f0",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-16T07:29:36+01:00",
+      "endTime": "2026-09-16T07:50:32.333+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0012449°, 20.0033609°"
+        },
+        "end": {
+          "latLng": "10.0044125°, 20.0089628°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.96
+        }
+      },
+      "segmentId": "synthetic-f783b3c2870cd60ecea8",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-16T07:29:36+01:00",
+      "endTime": "2026-09-16T09:33:08+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0010924°, 20.0033440°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0033081°, 20.0067547°",
+          "durationMinutesOffsetFromStartTime": "25"
+        },
+        {
+          "point": "10.0053484°, 20.0092950°",
+          "durationMinutesOffsetFromStartTime": "49"
+        },
+        {
+          "point": "10.0075088°, 20.0126324°",
+          "durationMinutesOffsetFromStartTime": "74"
+        },
+        {
+          "point": "10.0101757°, 20.0153860°",
+          "durationMinutesOffsetFromStartTime": "98"
+        },
+        {
+          "point": "10.0121302°, 20.0187396°",
+          "durationMinutesOffsetFromStartTime": "123"
+        }
+      ],
+      "segmentId": "synthetic-42a91939a6578f61df9c",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-16T07:50:32.333+01:00",
+      "endTime": "2026-09-16T08:28:21.272+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.97,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0045698°, 20.0092351°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.81,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-4136f826a9c3f479bcf2",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-16T08:28:21.272+01:00",
+      "endTime": "2026-09-16T08:59:31+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0045130°, 20.0089261°"
+        },
+        "end": {
+          "latLng": "10.0119162°, 20.0185532°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-040e3f7c2444d0ba1850",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-16T08:59:31+01:00",
+      "endTime": "2026-09-16T17:30:48.518+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.81,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0122365°, 20.0186472°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.8,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-88b19512cdcda2185801",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-16T17:30:48.518+01:00",
+      "endTime": "2026-09-16T17:50:23+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0121258°, 20.0188700°"
+        },
+        "end": {
+          "latLng": "10.0022831°, 20.0149109°"
+        },
+        "distanceMeters": 4000.0,
+        "topCandidate": {
+          "type": "cycling",
+          "typeCode": 11,
+          "probability": 0.95
+        }
+      },
+      "segmentId": "synthetic-3e5a95640aaef4a66218",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-16T17:30:48.518+01:00",
+      "endTime": "2026-09-16T19:29:15+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0121301°, 20.0188270°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0104315°, 20.0163389°",
+          "durationMinutesOffsetFromStartTime": "17"
+        },
+        {
+          "point": "10.0088762°, 20.0140449°",
+          "durationMinutesOffsetFromStartTime": "34"
+        },
+        {
+          "point": "10.0076007°, 20.0123982°",
+          "durationMinutesOffsetFromStartTime": "51"
+        },
+        {
+          "point": "10.0060073°, 20.0098493°",
+          "durationMinutesOffsetFromStartTime": "67"
+        },
+        {
+          "point": "10.0042490°, 20.0077106°",
+          "durationMinutesOffsetFromStartTime": "84"
+        },
+        {
+          "point": "10.0024957°, 20.0054761°",
+          "durationMinutesOffsetFromStartTime": "101"
+        },
+        {
+          "point": "10.0012609°, 20.0033735°",
+          "durationMinutesOffsetFromStartTime": "118"
+        }
+      ],
+      "segmentId": "synthetic-5347e87195f76fb7f418",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-16T17:50:23+01:00",
+      "endTime": "2026-09-16T19:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.94,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0021058°, 20.0149654°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 500,
+          "probability": 0.93,
+          "placeId": "ChIJ3harVGZA7_wRU653AETO7L8",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ3harVGZA7_wRU653AETO7L8",
+          "featureId": "0xfcef406654ab16de:0xbfecce440077ae53"
+        }
+      },
+      "segmentId": "synthetic-8db6a5bb3d61c815c582",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-16T19:00:00+01:00",
+      "endTime": "2026-09-16T19:29:15+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0023347°, 20.0148648°"
+        },
+        "end": {
+          "latLng": "10.0011804°, 20.0034724°"
+        },
+        "distanceMeters": 2900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-73f20e3fb6a831980e8a",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-16T19:29:15+01:00",
+      "endTime": "2026-09-17T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.98,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0013380°, 20.0033740°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.94,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-237694469a2077fb3b2c",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-17T00:00:00+01:00",
+      "endTime": "2026-09-17T07:30:13+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.95,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0013112°, 20.0035565°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.85,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-a0c97e215ca933fdbbfa",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-17T07:30:13+01:00",
+      "endTime": "2026-09-17T07:51:16.212+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0011229°, 20.0032986°"
+        },
+        "end": {
+          "latLng": "10.0043325°, 20.0090123°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.99
+        }
+      },
+      "segmentId": "synthetic-7e00e67c35322da69f97",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-17T07:30:13+01:00",
+      "endTime": "2026-09-17T09:27:01+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0013504°, 20.0033155°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0027384°, 20.0058012°",
+          "durationMinutesOffsetFromStartTime": "17"
+        },
+        {
+          "point": "10.0040748°, 20.0079381°",
+          "durationMinutesOffsetFromStartTime": "33"
+        },
+        {
+          "point": "10.0057683°, 20.0099627°",
+          "durationMinutesOffsetFromStartTime": "50"
+        },
+        {
+          "point": "10.0075277°, 20.0119506°",
+          "durationMinutesOffsetFromStartTime": "66"
+        },
+        {
+          "point": "10.0087755°, 20.0141135°",
+          "durationMinutesOffsetFromStartTime": "83"
+        },
+        {
+          "point": "10.0107622°, 20.0163977°",
+          "durationMinutesOffsetFromStartTime": "99"
+        },
+        {
+          "point": "10.0122256°, 20.0189008°",
+          "durationMinutesOffsetFromStartTime": "116"
+        }
+      ],
+      "segmentId": "synthetic-94507174d5c3fc424eef",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-17T07:51:16.212+01:00",
+      "endTime": "2026-09-17T08:33:05+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.83,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0045574°, 20.0092763°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.8,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-a1d3d95bb99af7903aed",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-17T08:33:05+01:00",
+      "endTime": "2026-09-17T08:56:11.867+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0045316°, 20.0092685°"
+        },
+        "end": {
+          "latLng": "10.0119983°, 20.0185404°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.92
+        }
+      },
+      "segmentId": "synthetic-6c10a2944805ab0ac281",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-17T08:56:11.867+01:00",
+      "endTime": "2026-09-17T17:27:15.827+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.87,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0119975°, 20.0185289°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.74,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-2cce2d04c7a71e530bd8",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-17T17:27:15.827+01:00",
+      "endTime": "2026-09-17T17:55:08+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0119567°, 20.0188642°"
+        },
+        "end": {
+          "latLng": "10.0076127°, 20.0011264°"
+        },
+        "distanceMeters": 7300.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.97
+        }
+      },
+      "segmentId": "synthetic-d6ab52a460b4e3eb59c1",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-17T17:27:15.827+01:00",
+      "endTime": "2026-09-17T19:31:10.024+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0123858°, 20.0184113°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0108525°, 20.0168355°",
+          "durationMinutesOffsetFromStartTime": "15"
+        },
+        {
+          "point": "10.0094311°, 20.0146581°",
+          "durationMinutesOffsetFromStartTime": "31"
+        },
+        {
+          "point": "10.0083024°, 20.0128286°",
+          "durationMinutesOffsetFromStartTime": "46"
+        },
+        {
+          "point": "10.0066884°, 20.0108533°",
+          "durationMinutesOffsetFromStartTime": "62"
+        },
+        {
+          "point": "10.0050410°, 20.0091291°",
+          "durationMinutesOffsetFromStartTime": "77"
+        },
+        {
+          "point": "10.0037315°, 20.0071153°",
+          "durationMinutesOffsetFromStartTime": "92"
+        },
+        {
+          "point": "10.0027983°, 20.0055648°",
+          "durationMinutesOffsetFromStartTime": "108"
+        },
+        {
+          "point": "10.0014581°, 20.0034835°",
+          "durationMinutesOffsetFromStartTime": "123"
+        }
+      ],
+      "segmentId": "synthetic-1a82c4a02761817f2419",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-17T17:55:08+01:00",
+      "endTime": "2026-09-17T19:04:53+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.8,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0079948°, 20.0010822°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.87,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-df565fd7fcd924cc896c",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-17T19:04:53+01:00",
+      "endTime": "2026-09-17T19:21:45+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0076989°, 20.0013111°"
+        },
+        "end": {
+          "latLng": "10.0012728°, 20.0033787°"
+        },
+        "distanceMeters": 2100.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.88
+        }
+      },
+      "segmentId": "synthetic-8b7dd7756febc57d3194",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-17T19:21:45+01:00",
+      "endTime": "2026-09-18T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.87,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011001°, 20.0033758°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.72,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-2b45ca454b951e16248e",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-18T00:00:00+01:00",
+      "endTime": "2026-09-20T22:56:34+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "trip": {
+        "name": "trip_1789686000"
+      },
+      "segmentId": "trip_1789686000",
+      "segmentType": 4
+    },
+    {
+      "startTime": "2026-09-18T00:00:00+01:00",
+      "endTime": "2026-09-18T06:29:15.703+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.83,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011915°, 20.0032900°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.87,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-36976e87509e920ea1b1",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-18T06:29:15.703+01:00",
+      "endTime": "2026-09-18T10:30:41.943+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "10.0010286°, 20.0034047°"
+        },
+        "end": {
+          "latLng": "12.0011510°, 22.0038638°"
+        },
+        "distanceMeters": 240000.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.95
+        }
+      },
+      "segmentId": "synthetic-d7924bf0cb8bfae686ef",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-18T06:29:15.703+01:00",
+      "endTime": "2026-09-18T10:30:41.943+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "10.0009991°, 20.0035208°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.2868646°, 20.2889510°",
+          "durationMinutesOffsetFromStartTime": "34"
+        },
+        {
+          "point": "10.5723454°, 20.5750637°",
+          "durationMinutesOffsetFromStartTime": "69"
+        },
+        {
+          "point": "10.8582655°, 20.8607263°",
+          "durationMinutesOffsetFromStartTime": "103"
+        },
+        {
+          "point": "11.1437363°, 21.1465561°",
+          "durationMinutesOffsetFromStartTime": "138"
+        },
+        {
+          "point": "11.4298936°, 21.4325318°",
+          "durationMinutesOffsetFromStartTime": "172"
+        },
+        {
+          "point": "11.7154836°, 21.7181970°",
+          "durationMinutesOffsetFromStartTime": "207"
+        },
+        {
+          "point": "12.0009362°, 22.0040822°",
+          "durationMinutesOffsetFromStartTime": "241"
+        }
+      ],
+      "segmentId": "synthetic-0f1065d28bdcc688dda4",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-18T10:30:41.943+01:00",
+      "endTime": "2026-09-19T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0011532°, 22.0039247°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 600,
+          "probability": 0.95,
+          "placeId": "ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "featureId": "0xe39404b16bfa6498:0xb8bc756d71db9b07"
+        }
+      },
+      "segmentId": "synthetic-42f7e3a85fe1eb00a6ed",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-19T00:00:00+01:00",
+      "endTime": "2026-09-19T09:02:32+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.86,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0010177°, 22.0041977°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 600,
+          "probability": 0.74,
+          "placeId": "ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "featureId": "0xe39404b16bfa6498:0xb8bc756d71db9b07"
+        }
+      },
+      "segmentId": "synthetic-7f1fb9c17570caa4f1b4",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-19T09:02:32+01:00",
+      "endTime": "2026-09-19T09:20:40.754+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "12.0011651°, 22.0041838°"
+        },
+        "end": {
+          "latLng": "12.0088557°, 22.0121103°"
+        },
+        "distanceMeters": 1400.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.96
+        }
+      },
+      "segmentId": "synthetic-165fb8d6fdb8a17d57b6",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-19T09:02:32+01:00",
+      "endTime": "2026-09-19T15:33:50+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "12.0010272°, 22.0039945°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "12.0025468°, 22.0054948°",
+          "durationMinutesOffsetFromStartTime": "65"
+        },
+        {
+          "point": "12.0037090°, 22.0065966°",
+          "durationMinutesOffsetFromStartTime": "130"
+        },
+        {
+          "point": "12.0048704°, 22.0077649°",
+          "durationMinutesOffsetFromStartTime": "196"
+        },
+        {
+          "point": "12.0065179°, 22.0091042°",
+          "durationMinutesOffsetFromStartTime": "261"
+        },
+        {
+          "point": "12.0078150°, 22.0106938°",
+          "durationMinutesOffsetFromStartTime": "326"
+        },
+        {
+          "point": "12.0092790°, 22.0121566°",
+          "durationMinutesOffsetFromStartTime": "391"
+        }
+      ],
+      "segmentId": "synthetic-10d4604a933f9162edb2",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-19T09:20:40.754+01:00",
+      "endTime": "2026-09-19T12:57:28+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.97,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0088964°, 22.0121404°"
+          },
+          "semanticTypeCode": 5,
+          "semanticType": "SEARCHED_ADDRESS",
+          "placeTypeCode": 700,
+          "probability": 0.96,
+          "placeId": "ChIJSYA0HvkIIAIRzu9Bv6k5ejs",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJSYA0HvkIIAIRzu9Bv6k5ejs",
+          "featureId": "0x022008f91e348049:0x3b7a39a9bf41efce"
+        }
+      },
+      "segmentId": "synthetic-aa20f3049f22a110f6ae",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-19T12:57:28+01:00",
+      "endTime": "2026-09-19T13:17:10+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "12.0089753°, 22.0120490°"
+        },
+        "end": {
+          "latLng": "12.0039952°, 22.0078848°"
+        },
+        "distanceMeters": 3200.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.88
+        }
+      },
+      "segmentId": "synthetic-64b0ffa0249a3244ff8b",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-19T13:17:10+01:00",
+      "endTime": "2026-09-19T15:04:26+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.82,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0040642°, 22.0079111°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 800,
+          "probability": 0.87,
+          "placeId": "ChIJ-iBU1xdcFYQRWuZVGlMbFDA",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-iBU1xdcFYQRWuZVGlMbFDA",
+          "featureId": "0x84155c17d75420fa:0x30141b531a55e65a"
+        }
+      },
+      "segmentId": "synthetic-12ea0cc62cc937b5ea72",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-19T15:04:26+01:00",
+      "endTime": "2026-09-19T15:14:33.021+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "12.0038123°, 22.0081892°"
+        },
+        "end": {
+          "latLng": "12.0008969°, 22.0039042°"
+        },
+        "distanceMeters": 900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-46c1310c54228556dd34",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-19T15:14:33.021+01:00",
+      "endTime": "2026-09-20T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.8,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0008594°, 22.0038802°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 600,
+          "probability": 0.92,
+          "placeId": "ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "featureId": "0xe39404b16bfa6498:0xb8bc756d71db9b07"
+        }
+      },
+      "segmentId": "synthetic-22e952c1591e3c846557",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-20T00:00:00+01:00",
+      "endTime": "2026-09-20T09:58:04+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.86,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "12.0010290°, 22.0039245°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 600,
+          "probability": 0.82,
+          "placeId": "ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJmGT6a7EElOMRB5vbcW11vLg",
+          "featureId": "0xe39404b16bfa6498:0xb8bc756d71db9b07"
+        }
+      },
+      "segmentId": "synthetic-aae82d6dc633f56b3151",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-20T09:58:04+01:00",
+      "endTime": "2026-09-20T14:04:20.452+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "activity": {
+        "start": {
+          "latLng": "12.0010872°, 22.0039401°"
+        },
+        "end": {
+          "latLng": "10.0012157°, 20.0033357°"
+        },
+        "distanceMeters": 240000.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.94
+        }
+      },
+      "segmentId": "synthetic-98beb84551954c202bf7",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-20T09:58:04+01:00",
+      "endTime": "2026-09-20T14:04:20.452+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "timelinePath": [
+        {
+          "point": "12.0012969°, 22.0040813°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "11.6011734°, 21.6040231°",
+          "durationMinutesOffsetFromStartTime": "49"
+        },
+        {
+          "point": "11.2012170°, 21.2035793°",
+          "durationMinutesOffsetFromStartTime": "98"
+        },
+        {
+          "point": "10.8013740°, 20.8037005°",
+          "durationMinutesOffsetFromStartTime": "148"
+        },
+        {
+          "point": "10.4011701°, 20.4037825°",
+          "durationMinutesOffsetFromStartTime": "197"
+        },
+        {
+          "point": "10.0013273°, 20.0036926°",
+          "durationMinutesOffsetFromStartTime": "246"
+        }
+      ],
+      "segmentId": "synthetic-05c7e5ed9b6766cbfd02",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-20T14:04:20.452+01:00",
+      "endTime": "2026-09-21T00:00:00+01:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 60,
+      "visit": {
+        "probability": 0.97,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012286°, 20.0032452°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.82,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-9918a2d7134072a0493d",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-21T00:00:00+01:00",
+      "endTime": "2026-09-21T07:28:28+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 60,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.72,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012124°, 20.0033438°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.83,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-f7d851649d7b9cd01351",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-21T07:28:28+02:00",
+      "endTime": "2026-09-21T07:52:25.636+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0012338°, 20.0034935°"
+        },
+        "end": {
+          "latLng": "10.0046592°, 20.0091995°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.89
+        }
+      },
+      "segmentId": "synthetic-980e35ec62f34366b8ee",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-21T07:28:28+02:00",
+      "endTime": "2026-09-21T09:27:47+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0011131°, 20.0034941°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0030918°, 20.0064643°",
+          "durationMinutesOffsetFromStartTime": "24"
+        },
+        {
+          "point": "10.0058277°, 20.0096343°",
+          "durationMinutesOffsetFromStartTime": "48"
+        },
+        {
+          "point": "10.0076812°, 20.0126933°",
+          "durationMinutesOffsetFromStartTime": "71"
+        },
+        {
+          "point": "10.0099830°, 20.0154653°",
+          "durationMinutesOffsetFromStartTime": "95"
+        },
+        {
+          "point": "10.0119246°, 20.0189316°",
+          "durationMinutesOffsetFromStartTime": "119"
+        }
+      ],
+      "segmentId": "synthetic-826f53396327fee89938",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-21T07:52:25.636+02:00",
+      "endTime": "2026-09-21T08:29:40+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0044164°, 20.0089083°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.76,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-897b558fafb6ca5de905",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-21T08:29:40+02:00",
+      "endTime": "2026-09-21T08:57:50.182+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0046070°, 20.0092261°"
+        },
+        "end": {
+          "latLng": "10.0121422°, 20.0186398°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.85
+        }
+      },
+      "segmentId": "synthetic-1324148a973484c8cf70",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-21T08:57:50.182+02:00",
+      "endTime": "2026-09-21T17:34:19.852+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.86,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0120037°, 20.0185678°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.79,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-7dff9cd3ebcb119a3875",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-21T17:34:19.852+02:00",
+      "endTime": "2026-09-21T17:55:04.850+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0122641°, 20.0187635°"
+        },
+        "end": {
+          "latLng": "10.0077872°, 20.0012231°"
+        },
+        "distanceMeters": 7300.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.81
+        }
+      },
+      "segmentId": "synthetic-aaa7838194eccf0b4ba6",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-21T17:34:19.852+02:00",
+      "endTime": "2026-09-21T19:32:20+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0122712°, 20.0185139°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0103589°, 20.0159494°",
+          "durationMinutesOffsetFromStartTime": "20"
+        },
+        {
+          "point": "10.0087505°, 20.0135661°",
+          "durationMinutesOffsetFromStartTime": "39"
+        },
+        {
+          "point": "10.0068979°, 20.0111869°",
+          "durationMinutesOffsetFromStartTime": "59"
+        },
+        {
+          "point": "10.0048971°, 20.0083572°",
+          "durationMinutesOffsetFromStartTime": "79"
+        },
+        {
+          "point": "10.0030326°, 20.0057332°",
+          "durationMinutesOffsetFromStartTime": "98"
+        },
+        {
+          "point": "10.0009829°, 20.0035294°",
+          "durationMinutesOffsetFromStartTime": "118"
+        }
+      ],
+      "segmentId": "synthetic-1f021fede42011691419",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-21T17:55:04.850+02:00",
+      "endTime": "2026-09-21T19:00:41+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.82,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0079985°, 20.0012225°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.92,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-c9a24dfc041cfabcabab",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-21T19:00:41+02:00",
+      "endTime": "2026-09-21T19:27:35.495+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0079159°, 20.0013467°"
+        },
+        "end": {
+          "latLng": "10.0011319°, 20.0032889°"
+        },
+        "distanceMeters": 2100.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.98
+        }
+      },
+      "segmentId": "synthetic-1dff573c6472616b7992",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-21T19:27:35.495+02:00",
+      "endTime": "2026-09-22T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.73,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012827°, 20.0035375°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.96,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-29ba5bace8b8cebbe891",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-22T00:00:00+02:00",
+      "endTime": "2026-09-22T07:31:19+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0010962°, 20.0034873°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.8,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-18032da90ab82cd5d0aa",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-22T07:31:19+02:00",
+      "endTime": "2026-09-22T07:47:14.504+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0013714°, 20.0035821°"
+        },
+        "end": {
+          "latLng": "10.0043180°, 20.0092238°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.8
+        }
+      },
+      "segmentId": "synthetic-1060f530ad0e1398724a",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-22T07:31:19+02:00",
+      "endTime": "2026-09-22T09:27:58.080+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0009092°, 20.0031031°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0033682°, 20.0066933°",
+          "durationMinutesOffsetFromStartTime": "23"
+        },
+        {
+          "point": "10.0057687°, 20.0093923°",
+          "durationMinutesOffsetFromStartTime": "46"
+        },
+        {
+          "point": "10.0075575°, 20.0123760°",
+          "durationMinutesOffsetFromStartTime": "70"
+        },
+        {
+          "point": "10.0101145°, 20.0157276°",
+          "durationMinutesOffsetFromStartTime": "93"
+        },
+        {
+          "point": "10.0122762°, 20.0184183°",
+          "durationMinutesOffsetFromStartTime": "116"
+        }
+      ],
+      "segmentId": "synthetic-6322e4b897ae225024f3",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-22T07:47:14.504+02:00",
+      "endTime": "2026-09-22T08:29:43.720+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0045114°, 20.0091896°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.84,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-815f42e5456e869ec640",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-22T08:29:43.720+02:00",
+      "endTime": "2026-09-22T08:55:07+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0043691°, 20.0089888°"
+        },
+        "end": {
+          "latLng": "10.0119933°, 20.0186799°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.94
+        }
+      },
+      "segmentId": "synthetic-e59dade0f1bbb1691416",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-22T08:55:07+02:00",
+      "endTime": "2026-09-22T17:29:52.560+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0121320°, 20.0185848°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.81,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-c05b34aa8237dae4333b",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-22T17:29:52.560+02:00",
+      "endTime": "2026-09-22T17:52:09+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0121170°, 20.0187259°"
+        },
+        "end": {
+          "latLng": "10.0022017°, 20.0148318°"
+        },
+        "distanceMeters": 4000.0,
+        "topCandidate": {
+          "type": "cycling",
+          "typeCode": 11,
+          "probability": 0.92
+        }
+      },
+      "segmentId": "synthetic-daf1953c1ecb59d06536",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-22T17:29:52.560+02:00",
+      "endTime": "2026-09-22T19:27:27.028+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0119473°, 20.0187528°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0104561°, 20.0159552°",
+          "durationMinutesOffsetFromStartTime": "20"
+        },
+        {
+          "point": "10.0084238°, 20.0137188°",
+          "durationMinutesOffsetFromStartTime": "39"
+        },
+        {
+          "point": "10.0067330°, 20.0113315°",
+          "durationMinutesOffsetFromStartTime": "58"
+        },
+        {
+          "point": "10.0050764°, 20.0085282°",
+          "durationMinutesOffsetFromStartTime": "78"
+        },
+        {
+          "point": "10.0030395°, 20.0060770°",
+          "durationMinutesOffsetFromStartTime": "98"
+        },
+        {
+          "point": "10.0012218°, 20.0036520°",
+          "durationMinutesOffsetFromStartTime": "117"
+        }
+      ],
+      "segmentId": "synthetic-bf2bfc0e9a5430393dbc",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-22T17:52:09+02:00",
+      "endTime": "2026-09-22T19:00:57.549+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.73,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0021243°, 20.0151362°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 500,
+          "probability": 0.79,
+          "placeId": "ChIJ3harVGZA7_wRU653AETO7L8",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ3harVGZA7_wRU653AETO7L8",
+          "featureId": "0xfcef406654ab16de:0xbfecce440077ae53"
+        }
+      },
+      "segmentId": "synthetic-2179c5742fd589485bf2",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-22T19:00:57.549+02:00",
+      "endTime": "2026-09-22T19:27:27.028+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0022999°, 20.0148521°"
+        },
+        "end": {
+          "latLng": "10.0011117°, 20.0035269°"
+        },
+        "distanceMeters": 2900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.84
+        }
+      },
+      "segmentId": "synthetic-aa9267cbff96766b2e86",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-22T19:27:27.028+02:00",
+      "endTime": "2026-09-23T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.79,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011790°, 20.0033319°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.79,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-6abe0a547e615289b9e9",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-23T00:00:00+02:00",
+      "endTime": "2026-09-23T07:26:40.832+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.75,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012051°, 20.0034005°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.8,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-0c2cefb1a00bd3ea36cc",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-23T07:26:40.832+02:00",
+      "endTime": "2026-09-23T07:48:34.680+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0010513°, 20.0033581°"
+        },
+        "end": {
+          "latLng": "10.0045831°, 20.0092529°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.8
+        }
+      },
+      "segmentId": "synthetic-b554688b68ff18424bbe",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-23T07:26:40.832+02:00",
+      "endTime": "2026-09-23T09:27:08+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0012142°, 20.0034352°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0027689°, 20.0053613°",
+          "durationMinutesOffsetFromStartTime": "15"
+        },
+        {
+          "point": "10.0039370°, 20.0069432°",
+          "durationMinutesOffsetFromStartTime": "30"
+        },
+        {
+          "point": "10.0055754°, 20.0094322°",
+          "durationMinutesOffsetFromStartTime": "45"
+        },
+        {
+          "point": "10.0067959°, 20.0108700°",
+          "durationMinutesOffsetFromStartTime": "60"
+        },
+        {
+          "point": "10.0079460°, 20.0128570°",
+          "durationMinutesOffsetFromStartTime": "75"
+        },
+        {
+          "point": "10.0093207°, 20.0146508°",
+          "durationMinutesOffsetFromStartTime": "90"
+        },
+        {
+          "point": "10.0104764°, 20.0166678°",
+          "durationMinutesOffsetFromStartTime": "105"
+        },
+        {
+          "point": "10.0122794°, 20.0187202°",
+          "durationMinutesOffsetFromStartTime": "120"
+        }
+      ],
+      "segmentId": "synthetic-d889180be19e195731f3",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-23T07:48:34.680+02:00",
+      "endTime": "2026-09-23T08:34:17.819+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.95,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0044302°, 20.0090207°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.74,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-add484d605a87edf0a6a",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-23T08:34:17.819+02:00",
+      "endTime": "2026-09-23T08:55:20+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0044041°, 20.0090521°"
+        },
+        "end": {
+          "latLng": "10.0119469°, 20.0187711°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.82
+        }
+      },
+      "segmentId": "synthetic-be4f610bb4fa0a4b9212",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-23T08:55:20+02:00",
+      "endTime": "2026-09-23T17:34:35.945+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.98,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0120355°, 20.0188134°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.88,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-81d521aeb45899f4abcf",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-23T17:34:35.945+02:00",
+      "endTime": "2026-09-23T17:57:19.279+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0120301°, 20.0187994°"
+        },
+        "end": {
+          "latLng": "10.0078004°, 20.0012105°"
+        },
+        "distanceMeters": 7300.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-6934595ca122aea101d3",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-23T17:34:35.945+02:00",
+      "endTime": "2026-09-23T19:31:23+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0120415°, 20.0186787°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0108307°, 20.0165336°",
+          "durationMinutesOffsetFromStartTime": "17"
+        },
+        {
+          "point": "10.0087864°, 20.0141176°",
+          "durationMinutesOffsetFromStartTime": "33"
+        },
+        {
+          "point": "10.0075409°, 20.0121805°",
+          "durationMinutesOffsetFromStartTime": "50"
+        },
+        {
+          "point": "10.0061155°, 20.0097679°",
+          "durationMinutesOffsetFromStartTime": "66"
+        },
+        {
+          "point": "10.0042610°, 20.0079082°",
+          "durationMinutesOffsetFromStartTime": "83"
+        },
+        {
+          "point": "10.0024872°, 20.0053452°",
+          "durationMinutesOffsetFromStartTime": "99"
+        },
+        {
+          "point": "10.0012274°, 20.0032594°",
+          "durationMinutesOffsetFromStartTime": "116"
+        }
+      ],
+      "segmentId": "synthetic-a3b47381ec7e61137cef",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-23T17:57:19.279+02:00",
+      "endTime": "2026-09-23T19:01:50.070+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.84,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0077807°, 20.0011118°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.82,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-3811ad737cea07bf9a51",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-23T19:01:50.070+02:00",
+      "endTime": "2026-09-23T19:27:52+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0076313°, 20.0012316°"
+        },
+        "end": {
+          "latLng": "10.0010224°, 20.0032195°"
+        },
+        "distanceMeters": 2100.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.89
+        }
+      },
+      "segmentId": "synthetic-7b2a31e4b511fc2e9509",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-23T19:27:52+02:00",
+      "endTime": "2026-09-24T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.79,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0013412°, 20.0033008°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.87,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-ef1648d60641eb8a2888",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-24T00:00:00+02:00",
+      "endTime": "2026-09-24T07:27:13.647+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.95,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012285°, 20.0034564°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.93,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-6414b526772dc0a99e7f",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-24T07:27:13.647+02:00",
+      "endTime": "2026-09-24T07:49:41+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0012046°, 20.0033728°"
+        },
+        "end": {
+          "latLng": "10.0045361°, 20.0092600°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.89
+        }
+      },
+      "segmentId": "synthetic-a3b9deeca5e082f70ecb",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-24T07:27:13.647+02:00",
+      "endTime": "2026-09-24T09:34:50+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0009241°, 20.0036107°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0025376°, 20.0051264°",
+          "durationMinutesOffsetFromStartTime": "16"
+        },
+        {
+          "point": "10.0038046°, 20.0073398°",
+          "durationMinutesOffsetFromStartTime": "32"
+        },
+        {
+          "point": "10.0049908°, 20.0089095°",
+          "durationMinutesOffsetFromStartTime": "48"
+        },
+        {
+          "point": "10.0065316°, 20.0112823°",
+          "durationMinutesOffsetFromStartTime": "64"
+        },
+        {
+          "point": "10.0081606°, 20.0132450°",
+          "durationMinutesOffsetFromStartTime": "79"
+        },
+        {
+          "point": "10.0094008°, 20.0149182°",
+          "durationMinutesOffsetFromStartTime": "95"
+        },
+        {
+          "point": "10.0107683°, 20.0168029°",
+          "durationMinutesOffsetFromStartTime": "111"
+        },
+        {
+          "point": "10.0121252°, 20.0188911°",
+          "durationMinutesOffsetFromStartTime": "127"
+        }
+      ],
+      "segmentId": "synthetic-022dfd27629c00db2046",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-24T07:49:41+02:00",
+      "endTime": "2026-09-24T08:30:14+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0045392°, 20.0092462°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.83,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-da7622f3413acc5c10ce",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-24T08:30:14+02:00",
+      "endTime": "2026-09-24T08:56:34+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0043755°, 20.0090929°"
+        },
+        "end": {
+          "latLng": "10.0119291°, 20.0188363°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.99
+        }
+      },
+      "segmentId": "synthetic-9bdc2531c4c30cf4e428",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-24T08:56:34+02:00",
+      "endTime": "2026-09-24T17:32:12.544+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.85,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0122081°, 20.0187057°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.83,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-37b0be462fe9f7e03fbd",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-24T17:32:12.544+02:00",
+      "endTime": "2026-09-24T18:04:26+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0121324°, 20.0186810°"
+        },
+        "end": {
+          "latLng": "10.0348524°, 20.0409777°"
+        },
+        "distanceMeters": 30000.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.83
+        }
+      },
+      "segmentId": "synthetic-904014c407a883cc59f2",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-24T11:04:26-05:00",
+      "endTime": "2026-09-24T12:28:16-05:00",
+      "startTimeTimezoneUtcOffsetMinutes": -300,
+      "endTimeTimezoneUtcOffsetMinutes": -300,
+      "visit": {
+        "probability": 0.87,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0351978°, 20.0410945°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 900,
+          "probability": 0.82,
+          "placeId": "ChIJYNTpZgf1z_cRo_ZAysWL2DI",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJYNTpZgf1z_cRo_ZAysWL2DI",
+          "featureId": "0xf7cff50766e9d460:0x32d88bc5ca40f6a3"
+        }
+      },
+      "segmentId": "synthetic-f2c15e6d823b110c8202",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-24T12:28:16-05:00",
+      "endTime": "2026-09-24T14:02:18-05:00",
+      "startTimeTimezoneUtcOffsetMinutes": -300,
+      "endTimeTimezoneUtcOffsetMinutes": -300,
+      "timelinePath": [
+        {
+          "point": "10.0352392°, 20.0412551°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0284478°, 20.0334100°",
+          "durationMinutesOffsetFromStartTime": "19"
+        },
+        {
+          "point": "10.0214586°, 20.0261375°",
+          "durationMinutesOffsetFromStartTime": "38"
+        },
+        {
+          "point": "10.0146436°, 20.0185896°",
+          "durationMinutesOffsetFromStartTime": "56"
+        },
+        {
+          "point": "10.0079489°, 20.0108219°",
+          "durationMinutesOffsetFromStartTime": "75"
+        },
+        {
+          "point": "10.0011737°, 20.0031699°",
+          "durationMinutesOffsetFromStartTime": "94"
+        }
+      ],
+      "segmentId": "synthetic-162c06ccd5498a35b656",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-24T21:02:18+02:00",
+      "endTime": "2026-09-25T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.72,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011418°, 20.0033661°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.77,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-744833c56030c5d578fa",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-25T00:00:00+02:00",
+      "endTime": "2026-09-25T07:30:23+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.99,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012358°, 20.0033149°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.79,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-ed756ab4f90c694d08c8",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-25T07:30:23+02:00",
+      "endTime": "2026-09-25T07:54:18+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0012765°, 20.0033734°"
+        },
+        "end": {
+          "latLng": "10.0046108°, 20.0090943°"
+        },
+        "distanceMeters": 1200.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.94
+        }
+      },
+      "segmentId": "synthetic-031765062cbe17a7e552",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-25T07:30:23+02:00",
+      "endTime": "2026-09-25T09:34:43.687+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0014971°, 20.0035107°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0031874°, 20.0066431°",
+          "durationMinutesOffsetFromStartTime": "25"
+        },
+        {
+          "point": "10.0056825°, 20.0092486°",
+          "durationMinutesOffsetFromStartTime": "50"
+        },
+        {
+          "point": "10.0075685°, 20.0126666°",
+          "durationMinutesOffsetFromStartTime": "74"
+        },
+        {
+          "point": "10.0101398°, 20.0154143°",
+          "durationMinutesOffsetFromStartTime": "99"
+        },
+        {
+          "point": "10.0120684°, 20.0188092°",
+          "durationMinutesOffsetFromStartTime": "124"
+        }
+      ],
+      "segmentId": "synthetic-b897e5bd392cc93c1c69",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-25T07:54:18+02:00",
+      "endTime": "2026-09-25T08:33:25+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.98,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0043366°, 20.0089518°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.78,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-d65cf9b03d040cbd04fd",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-25T08:33:25+02:00",
+      "endTime": "2026-09-25T08:51:06.491+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0046099°, 20.0089396°"
+        },
+        "end": {
+          "latLng": "10.0121599°, 20.0185750°"
+        },
+        "distanceMeters": 8500.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.8
+        }
+      },
+      "segmentId": "synthetic-cab1eba62911c863cea5",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-25T08:51:06.491+02:00",
+      "endTime": "2026-09-25T17:26:35.432+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.98,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0120387°, 20.0188784°"
+          },
+          "semanticTypeCode": 2,
+          "semanticType": "WORK",
+          "placeTypeCode": 200,
+          "probability": 0.75,
+          "placeId": "ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ7PTmqfgA62MROvtGWoV_mcE",
+          "featureId": "0x63eb00f8a9e6f4ec:0xc1997f855a46fb3a"
+        }
+      },
+      "segmentId": "synthetic-44c3868fdcf0d77aa7eb",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-25T17:26:35.432+02:00",
+      "endTime": "2026-09-25T17:58:57.620+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0122416°, 20.0185423°"
+        },
+        "end": {
+          "latLng": "10.0077545°, 20.0013622°"
+        },
+        "distanceMeters": 7300.0,
+        "topCandidate": {
+          "type": "in passenger vehicle",
+          "typeCode": 29,
+          "probability": 0.84
+        }
+      },
+      "segmentId": "synthetic-e3e1af7d3c73767e396c",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-25T17:26:35.432+02:00",
+      "endTime": "2026-09-25T19:33:19+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0119371°, 20.0185647°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0100438°, 20.0155870°",
+          "durationMinutesOffsetFromStartTime": "25"
+        },
+        {
+          "point": "10.0075181°, 20.0123972°",
+          "durationMinutesOffsetFromStartTime": "50"
+        },
+        {
+          "point": "10.0055965°, 20.0095791°",
+          "durationMinutesOffsetFromStartTime": "76"
+        },
+        {
+          "point": "10.0036560°, 20.0064797°",
+          "durationMinutesOffsetFromStartTime": "101"
+        },
+        {
+          "point": "10.0012654°, 20.0031893°",
+          "durationMinutesOffsetFromStartTime": "126"
+        }
+      ],
+      "segmentId": "synthetic-6c1995f4644b22bc91bc",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-25T17:58:57.620+02:00",
+      "endTime": "2026-09-25T19:04:16.909+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.95,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0079741°, 20.0012147°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.89,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-961f811ba8b934fe22bf",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-25T19:04:16.909+02:00",
+      "endTime": "2026-09-25T19:29:58.777+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0078494°, 20.0013444°"
+        },
+        "end": {
+          "latLng": "10.0010411°, 20.0035031°"
+        },
+        "distanceMeters": 2100.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.94
+        }
+      },
+      "segmentId": "synthetic-1b9fa309ecf5e952b117",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-25T19:29:58.777+02:00",
+      "endTime": "2026-09-26T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "finalizationStatus": 2,
+      "displayMode": 1,
+      "source": 3,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011388°, 20.0035541°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.74,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-ff7c09c7c1d7af34314d",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-26T00:00:00+02:00",
+      "endTime": "2026-09-26T10:02:17.712+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.85,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011223°, 20.0033965°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.88,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-01ad368b4a21f786b88c",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-26T10:02:17.712+02:00",
+      "endTime": "2026-09-26T10:29:21.777+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0010725°, 20.0035520°"
+        },
+        "end": {
+          "latLng": "10.0078777°, 20.0012139°"
+        },
+        "distanceMeters": 1800.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.81
+        }
+      },
+      "segmentId": "synthetic-cbc6a0674c931efb3fb0",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-26T10:02:17.712+02:00",
+      "endTime": "2026-09-26T15:32:01.355+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0009680°, 20.0036392°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0020860°, 20.0030777°",
+          "durationMinutesOffsetFromStartTime": "55"
+        },
+        {
+          "point": "10.0033082°, 20.0024218°",
+          "durationMinutesOffsetFromStartTime": "110"
+        },
+        {
+          "point": "10.0047993°, 20.0021800°",
+          "durationMinutesOffsetFromStartTime": "164"
+        },
+        {
+          "point": "10.0054494°, 20.0019511°",
+          "durationMinutesOffsetFromStartTime": "219"
+        },
+        {
+          "point": "10.0066171°, 20.0013137°",
+          "durationMinutesOffsetFromStartTime": "274"
+        },
+        {
+          "point": "10.0080555°, 20.0011232°",
+          "durationMinutesOffsetFromStartTime": "329"
+        }
+      ],
+      "segmentId": "synthetic-cd6b7a9d10ce04fb8921",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-26T10:29:21.777+02:00",
+      "endTime": "2026-09-26T13:01:33+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0078580°, 20.0013248°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.81,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-68679418d2e192556c69",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-26T13:01:33+02:00",
+      "endTime": "2026-09-26T13:18:30.130+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0079549°, 20.0012793°"
+        },
+        "end": {
+          "latLng": "10.0043900°, 20.0091541°"
+        },
+        "distanceMeters": 900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.96
+        }
+      },
+      "segmentId": "synthetic-eec43da96fee328fd220",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-26T13:18:30.130+02:00",
+      "endTime": "2026-09-26T14:56:36.118+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.87,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0043905°, 20.0089798°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.96,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-daebc2968bb026f4a4a7",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-26T14:56:36.118+02:00",
+      "endTime": "2026-09-26T15:27:20.020+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0046287°, 20.0092289°"
+        },
+        "end": {
+          "latLng": "10.0010881°, 20.0034972°"
+        },
+        "distanceMeters": 1700.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.85
+        }
+      },
+      "segmentId": "synthetic-7fbb970598315de31515",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-26T15:27:20.020+02:00",
+      "endTime": "2026-09-27T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.79,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012503°, 20.0035445°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.91,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-4c214b24456f9cdefb79",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-27T00:00:00+02:00",
+      "endTime": "2026-09-27T09:59:06+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.81,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0011095°, 20.0034061°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.98,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-297b947591fd30107f6f",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-27T09:59:06+02:00",
+      "endTime": "2026-09-27T10:31:59+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0012565°, 20.0035373°"
+        },
+        "end": {
+          "latLng": "10.0078425°, 20.0013482°"
+        },
+        "distanceMeters": 1800.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.88
+        }
+      },
+      "segmentId": "synthetic-13d150d9af561fa4eaee",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-27T09:59:06+02:00",
+      "endTime": "2026-09-27T15:28:43+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "timelinePath": [
+        {
+          "point": "10.0011904°, 20.0035806°",
+          "durationMinutesOffsetFromStartTime": "0"
+        },
+        {
+          "point": "10.0024604°, 20.0029524°",
+          "durationMinutesOffsetFromStartTime": "55"
+        },
+        {
+          "point": "10.0032754°, 20.0024600°",
+          "durationMinutesOffsetFromStartTime": "110"
+        },
+        {
+          "point": "10.0046771°, 20.0024999°",
+          "durationMinutesOffsetFromStartTime": "164"
+        },
+        {
+          "point": "10.0055434°, 20.0022194°",
+          "durationMinutesOffsetFromStartTime": "219"
+        },
+        {
+          "point": "10.0064871°, 20.0014438°",
+          "durationMinutesOffsetFromStartTime": "274"
+        },
+        {
+          "point": "10.0079122°, 20.0012833°",
+          "durationMinutesOffsetFromStartTime": "329"
+        }
+      ],
+      "segmentId": "synthetic-b9e17e402058d0912892",
+      "segmentType": 3
+    },
+    {
+      "startTime": "2026-09-27T10:31:59+02:00",
+      "endTime": "2026-09-27T13:04:30+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.96,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0078143°, 20.0011575°"
+          },
+          "semanticTypeCode": 0,
+          "semanticType": "UNKNOWN",
+          "placeTypeCode": 400,
+          "probability": 0.89,
+          "placeId": "ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ_8W2JWhjsfIR6LTkyEnSON0",
+          "featureId": "0xf2b1636825b6c5ff:0xdd38d249c8e4b4e8"
+        }
+      },
+      "segmentId": "synthetic-cf3eec2836f3cd8810c2",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-27T13:04:30+02:00",
+      "endTime": "2026-09-27T13:19:08.520+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0076439°, 20.0010962°"
+        },
+        "end": {
+          "latLng": "10.0046589°, 20.0090098°"
+        },
+        "distanceMeters": 900.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.8
+        }
+      },
+      "segmentId": "synthetic-d935a2c5374a975fb254",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-27T13:19:08.520+02:00",
+      "endTime": "2026-09-27T15:04:17+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.91,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0044047°, 20.0089504°"
+          },
+          "semanticTypeCode": 4,
+          "semanticType": "INFERRED",
+          "placeTypeCode": 300,
+          "probability": 0.92,
+          "placeId": "ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP3qLNEWdGSkRb8hwBzfYI24",
+          "featureId": "0x29199d45348b7a3f:0x6e23d8370770c86f"
+        }
+      },
+      "segmentId": "synthetic-d7ab94b8f700d3a85748",
+      "segmentType": 1
+    },
+    {
+      "startTime": "2026-09-27T15:04:17+02:00",
+      "endTime": "2026-09-27T15:22:41+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "activity": {
+        "start": {
+          "latLng": "10.0044453°, 20.0091222°"
+        },
+        "end": {
+          "latLng": "10.0013218°, 20.0034029°"
+        },
+        "distanceMeters": 1700.0,
+        "topCandidate": {
+          "type": "walking",
+          "typeCode": 2,
+          "probability": 0.91
+        }
+      },
+      "segmentId": "synthetic-d65a73886f968509da68",
+      "segmentType": 2
+    },
+    {
+      "startTime": "2026-09-27T15:22:41+02:00",
+      "endTime": "2026-09-28T00:00:00+02:00",
+      "startTimeTimezoneUtcOffsetMinutes": 120,
+      "endTimeTimezoneUtcOffsetMinutes": 120,
+      "visit": {
+        "probability": 0.76,
+        "topCandidate": {
+          "placeLocation": {
+            "latLng": "10.0012476°, 20.0033782°"
+          },
+          "semanticTypeCode": 1,
+          "semanticType": "HOME",
+          "placeTypeCode": 100,
+          "probability": 0.74,
+          "placeId": "ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "placeUrl": "https://www.google.com/maps/place/?q=place_id:ChIJd6LRwUhHbnwRLv7sy1adH4E",
+          "featureId": "0x7c6e4748c1d1a277:0x811f9d56cbecfe2e"
+        }
+      },
+      "segmentId": "synthetic-e84d5b7e4875997d493c",
+      "segmentType": 1
+    }
+  ],
+  "exportMeta": {
+    "generator": "timeline-sync",
+    "upstreamCommit": "3c1faa0c1d375ec7d7faf31d4789c8a69637a6ec",
+    "generatedAt": "2026-09-28T09:00:00Z",
+    "adapter": "synthetic"
+  }
+}

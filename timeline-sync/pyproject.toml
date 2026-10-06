@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "timeline-sync"
+version = "0.1.0"
+description = "Thin, secret-safe wrapper that syncs your own Google Maps Timeline via the pinned upstream arkenoi/timeline-export"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx[http2]>=0.27",
+    "cryptography>=42",
+    "gpsoauth>=1.1",
+]
+
+[project.optional-dependencies]
+browser = ["browser-cookie3"]
+dev = ["pytest>=8", "jsonschema>=4"]
+
+[project.scripts]
+timeline-sync = "timeline_sync.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["timeline_sync*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
