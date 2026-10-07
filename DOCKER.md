@@ -124,6 +124,47 @@ docker compose restart live-poller
 `IMPORT_WHAT=secrets` copies only the `secrets/` folder, so the databases in the volume are left alone.
 A full import refuses to overwrite a volume that already has databases unless you pass `FORCE=1`.
 
+### Automatic Timeline re-auth (Linux host with a TPM 2.0)
+Google sometimes revokes the Timeline master token (`BadAuthentication` in `timeline-sync status`).
+The `google-browser` service fixes that without you:
+
+- **The browser:** a persistent Chromium, signed into the Timeline account, with noVNC on
+  `127.0.0.1:6086`.
+- **The watcher:** when `sync-status.json` says `auth: expired`, `tools/google-reauth.mjs` opens
+  Google's `EmbeddedSetup` page through Chromium's local DevTools port. It enters the email, then
+  types the password, clicks **I agree**, and pipes the single-use `oauth_token` straight into
+  `timeline-sync auth --oauth-token-stdin`. It never writes or logs the token.
+- **The password:** Chromium won't autofill on that Google page, so the password is stored
+  **encrypted with the host's TPM** (`systemd-creds`, bound to PCR 7). It is decrypted in memory
+  only for that step. A copied data folder or backup can't decrypt it.
+- **Limits:**
+  - If Google asks for a phone approval, the watcher waits for it.
+  - On a CAPTCHA, a verification code, or "browser not secure", it stops and logs that it
+    needs you.
+  - It makes at most one attempt per `REAUTH_MIN_GAP` (default: 1 hour).
+
+One-time setup on the host:
+```bash
+# 1. let a `tss` group use the TPM (survives reboots), record its gid, start the service
+sudo groupadd -f --system tss
+echo 'KERNEL=="tpmrm0", GROUP="tss", MODE="0660"' | sudo tee /etc/udev/rules.d/60-tpmrm0-tss.rules
+sudo udevadm control --reload && sudo udevadm trigger --name-match=tpmrm0
+echo "TPM_GID=$(getent group tss | cut -d: -f3)" >> .env
+echo "TIMELINE_GOOGLE_EMAIL=you@gmail.com" >> .env
+docker compose up -d google-browser
+# 2. sign in once over noVNC (ssh -L 6086:127.0.0.1:6086 <server>, open /vnc.html)
+# 3. store the password, TPM-encrypted (hidden input):
+docker compose exec -it google-browser google-password-set
+# test the whole flow (gets a fresh master token):
+docker compose exec google-browser sh -c 'node /app/tools/google-reauth.mjs | timeline-sync auth --email "$TIMELINE_GOOGLE_EMAIL" --oauth-token-stdin'
+```
+
+`google-password-set --check` verifies that the stored password still decrypts, and `--remove`
+deletes it. Rerun `google-password-set` when:
+- you change your Google password,
+- you change Secure Boot settings or keys (this changes PCR 7), or
+- you move to another machine. The encrypted file only works with the TPM that created it.
+
 ## 5. Connect Claude to the Docker servers
 
 **Claude Code over stdio.** Run the stdio server inside the running container so it reads the volume.

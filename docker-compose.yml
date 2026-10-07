@@ -128,6 +128,28 @@ services:
     ports:
       - "127.0.0.1:${VNC_PORT:-6080}:6080"
 
+  # Persistent Chromium signed into the Timeline Google account (one human sign-in over noVNC,
+  # password saved by Chromium). When Google revokes the Timeline master token, its watcher gets a
+  # fresh one from this browser session automatically. See DOCKER.md "Automatic Timeline re-auth".
+  google-browser:
+    <<: *app
+    command: ["google-browser"]
+    environment:
+      <<: *env
+      BROWSER_MODE: vnc
+      VNC_PASSWORD: ${VNC_PASSWORD:-}
+      TIMELINE_GOOGLE_EMAIL: ${TIMELINE_GOOGLE_EMAIL:-}
+      REAUTH_MIN_GAP: ${REAUTH_MIN_GAP:-3600}
+    # TPM access for the encrypted Google password (google-password-set). Only this service gets it.
+    # Host setup (once): a `tss` group owning /dev/tpmrm0; put its gid in TPM_GID. See DOCKER.md.
+    devices:
+      - /dev/tpmrm0:/dev/tpmrm0
+    group_add:
+      - "${TPM_GID:-0}"
+    shm_size: "1gb"
+    ports:
+      - "127.0.0.1:${GOOGLE_VNC_PORT:-6086}:6080"   # http://localhost:6086/vnc.html
+
   # ChatGPT via OpenAI Secure MCP Tunnel (outbound-only; nothing is exposed publicly).
   # One tunnel per MCP server. tunnel-client launches the server over stdio inside this image,
   # so no OAuth server has to be reachable from the internet. Enable with:

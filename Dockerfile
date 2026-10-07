@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python3 python3-venv python3-pip \
         chromium fonts-liberation fonts-noto-cjk fonts-noto-color-emoji \
         xvfb x11vnc fluxbox novnc websockify \
+        systemd libtss2-esys-3.0.2-0 libtss2-rc0 libtss2-mu0 libtss2-tcti-device0 \
     && rm -rf /var/lib/apt/lists/*
 
 # ---- OpenAI Secure MCP Tunnel client (static binary; used by the chatgpt-* services) ----
@@ -24,7 +25,9 @@ COPY --from=ghcr.io/openai/tunnel-client:v0.0.15 /usr/bin/tunnel-client /usr/loc
 COPY docker/entrypoint.sh /usr/local/bin/lp-entrypoint
 COPY docker/chromium-wrapper.sh /usr/local/bin/chromium-wrapper
 COPY docker/timeline-sync-loop.sh /usr/local/bin/timeline-sync-loop
-RUN chmod 0755 /usr/local/bin/lp-entrypoint /usr/local/bin/chromium-wrapper /usr/local/bin/timeline-sync-loop \
+COPY docker/google-browser.sh /usr/local/bin/google-browser
+COPY docker/google-password-set.sh /usr/local/bin/google-password-set
+RUN chmod 0755 /usr/local/bin/lp-entrypoint /usr/local/bin/chromium-wrapper /usr/local/bin/timeline-sync-loop /usr/local/bin/google-browser /usr/local/bin/google-password-set \
     && mkdir -p /app /opt/venv /data \
     && chown node:node /app /opt/venv /data
 
