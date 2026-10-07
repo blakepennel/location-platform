@@ -42,6 +42,8 @@ cookies*.txt
 *cookies*.json
 *.cookies
 cookie-jar*
+!**/src/cookie-jar.ts
+!**/test/cookie-jar.test.ts
 oauth_token*
 credentials*.json
 client_secret*.json
