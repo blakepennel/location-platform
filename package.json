@@ -1,5 +1,6 @@
 {
   "name": "location-platform",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "workspaces": ["shared", "mcp-auth", "timeline-mcp", "live-location-mcp"],
